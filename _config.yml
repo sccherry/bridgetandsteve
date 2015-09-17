@@ -1,0 +1,12 @@
+# Site settings
+title: Bridget & Steve
+description: > # this means to ignore newlines until "baseurl:"
+  Bridget and Steve are getting married!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://sccherry.bitbucket.org" # the base hostname & protocol for your site
+
+safe: true
+host: 0.0.0.0
+
+# Build settings
+markdown: kramdown
