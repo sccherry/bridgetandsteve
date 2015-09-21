@@ -88,7 +88,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to define default font stacks
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$font-family-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-serif: "Lobster Two", Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
@@ -115,6 +115,13 @@ $font-weight-bold: bold;
 // $jet         : #222222;
 // $black       : #000000;
 
+// https://color.adobe.com/The-kiss-color-theme-1566975/
+$shale      : #56626b;
+$olive      : #6c9380;
+$pea        : #c0ca55;
+$mauve      : #f07c6c;
+$burgundy   : #ad5472;
+
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
@@ -125,7 +132,7 @@ $font-weight-bold: bold;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
+$body-font-color: $shale;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -213,7 +220,7 @@ $font-weight-bold: bold;
 $header-font-family: $font-family-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: $olive;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -270,7 +277,7 @@ $header-font-family: $font-family-serif;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
+$anchor-font-color: $mauve;
 // $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
 
 // We use these to style the <hr> element
@@ -1400,7 +1407,7 @@ $header-font-family: $font-family-serif;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+$topbar-bg-color: $burgundy;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1408,7 +1415,7 @@ $header-font-family: $font-family-serif;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-$topbar-title-weight: $font-weight-bold;
+// $topbar-title-weight: $font-weight-normal;
 $topbar-title-font-size: rem-calc(24);
 
 // Set the link colors and styles for top-level nav
@@ -1420,7 +1427,7 @@ $topbar-link-weight: $font-weight-bold;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: $jet;
+$topbar-link-bg-hover: $pea;
 // $topbar-link-bg-color-hover: $charcoal;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
