@@ -7,35 +7,37 @@ permalink: /big-day/
 This page contains information about logistics for the day of our wedding, including times for the ceremony and reception, the address and map of the location, and information about any provided transportation.
 
 
-<div id="ceremony" class="small-6 columns">
-  <h3>Ceremony</h3>
+<div class="row">
+  <div id="ceremony" class="small-6 columns">
+    <h3>Ceremony</h3>
 
-  <dl>
-    <dt>Time</dt>
-    <dd>2:00 PM</dd>
+    <dl>
+      <dt>Time</dt>
+      <dd>2:00 PM</dd>
 
-    <dt>Address</dt>
-    <dd>
-      <a href="http://www.shrineofthesacredheart.org/index.html">Shrine of the Sacred Heart</a><br>
-      Sacred Heart Way<br>
-      Washington, DC 20010
-    </dd>
-  </dl>
- </div>
+      <dt>Address</dt>
+      <dd>
+        <a href="http://www.shrineofthesacredheart.org/index.html">Shrine of the Sacred Heart</a><br>
+        Sacred Heart Way<br>
+        Washington, DC 20010
+      </dd>
+    </dl>
+  </div>
 
-<div id="reception" class="small-6 columns">
-  <h3>Reception</h3>
+  <div id="reception" class="small-6 columns">
+    <h3>Reception</h3>
 
-  <dl>
-    <dt>Time</dt>
-    <dd>6:00 PM</dd>
-    <dt>Address</dt>
-    <dd>
-      <a href="#">Reception Place</a><br>
-      1234 Street Ave.<br>
-      Washington, DC 12345
-    </dd>
-  </dl>
+    <dl>
+      <dt>Time</dt>
+      <dd>6:00 PM</dd>
+      <dt>Address</dt>
+      <dd>
+        <a href="#">Reception Place</a><br>
+        1234 Street Ave.<br>
+        Washington, DC 12345
+      </dd>
+    </dl>
+  </div>
 </div>
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zVe7QyZsm-NM.kXhlkLxg2ZlA" width="640" height="480"></iframe>
