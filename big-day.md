@@ -37,3 +37,5 @@ This page contains information about logistics for the day of our wedding, inclu
     </dd>
   </dl>
 </div>
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zVe7QyZsm-NM.kXhlkLxg2ZlA" width="640" height="480"></iframe>
