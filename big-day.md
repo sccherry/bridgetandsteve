@@ -40,4 +40,6 @@ This page contains information about logistics for the day of our wedding, inclu
   </div>
 </div>
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zVe7QyZsm-NM.kXhlkLxg2ZlA" width="640" height="480"></iframe>
+<div class="flex-video">
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=zVe7QyZsm-NM.kXhlkLxg2ZlA" width="640" height="480"></iframe>
+</div>
