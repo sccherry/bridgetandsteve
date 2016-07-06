@@ -12,6 +12,33 @@ h6 {
 }
 
 .billboard {
-  width: 100%;
-  margin-bottom: $paragraph-margin-bottom;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  img {
+    max-width: none;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.home {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: hsla(0, 0%, 100%, .5);
 }
