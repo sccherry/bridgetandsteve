@@ -41,4 +41,21 @@ h6 {
   align-items: center;
   text-align: center;
   background-color: hsla(0, 0%, 100%, .5);
+
+  p {
+    transition: font-size .2s;
+    max-width: 90%;
+  }
+
+  @media #{$small-up} {
+    p {
+      font-size: $h4-font-size;
+    }
+  }
+
+  @media #{$medium-up} {
+    p {
+      font-size: $h2-font-size;
+    }
+  }
 }
