@@ -21,6 +21,6 @@
 
 {% if page.billboard.src %}
   <div class="billboard">
-    <img src="{{ page.billboard.src }}" alt="{{ page.billboard.alt }}">
+    <img src="{{ page.billboard.src }}" alt="{{ page.billboard.alt }}"{% if page.billboard.srcset %} srcset="{% for source in page.billboard.srcset %}{{ source.src }} {{ source.size }}{% if forloop.last == false %}, {% endif %}{% endfor %}" sizes="100vw"{% endif %}>
   </div>
 {% endif %}
