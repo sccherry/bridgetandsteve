@@ -19,8 +19,22 @@
   </nav>
 </div>
 
-{% if page.billboard.src %}
+{% if page.billboard %}
   <div class="billboard">
-    <img src="{{ page.billboard.src }}" alt="{{ page.billboard.alt }}"{% if page.billboard.srcset %} srcset="{% for source in page.billboard.srcset %}{{ source.src }} {{ source.size }}{% if forloop.last == false %}, {% endif %}{% endfor %}" sizes="100vw"{% endif %}>
+    {% if page.billboard.srcset %}
+    <picture>
+      {% if page.billboard.srcset.portrait %}
+        <source srcset="{% for source in page.billboard.srcset.portrait %}{{ source.src }} {{ source.size }}{% if forloop.last == false %}, {% endif %}{% endfor %}" sizes="100vw" media="(max-aspect-ratio: 1/1)">
+      {% endif %}
+
+      {% if page.billboard.srcset.landscape %}
+        <source srcset="{% for source in page.billboard.srcset.landscape %}{{ source.src }} {{ source.size }}{% if forloop.last == false %}, {% endif %}{% endfor %}" sizes="100vw" media="(min-aspect-ratio: 1/1)">
+      {% endif %}
+
+      <img src="{{ page.billboard.srcset.fallback }}" alt="{{ page.billboard.alt }}">
+    </picture>
+    {% else %}
+      <img src="{{ page.billboard.src }}" alt="{{ page.billboard.alt }}">
+    {% endif %}
   </div>
 {% endif %}
