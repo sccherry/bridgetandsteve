@@ -24,9 +24,9 @@ h6 {
     min-width: 100vw;
     min-height: 100vh;
     position: relative;
-    top: 50%;
+    top: 50%; // 0 to top align
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); // -50%, 0 to top align
   }
 }
 
