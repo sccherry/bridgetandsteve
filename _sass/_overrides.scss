@@ -61,3 +61,24 @@ h6 {
     }
   }
 }
+
+.slick {
+  margin-bottom: rem-calc(20);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: $emerald;
+}
+
+.media {
+  &,
+  .orbit-caption {
+    overflow: hidden;
+  }
+
+  .th {
+    margin-top: 1px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,43 @@
+---
+layout: page
+title: Pictures
+permalink: /pictures/
+---
+
+<div id="carousel" class="slick">
+  {% for image in site.data.images %}
+    <div>
+      <img data-lazy="{{ image.fullsize }}" alt="{{ image.caption }}">
+      <div class="orbit-caption text-center">{{ image.caption }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+<div id="gallery">
+  {% for image in site.data.images %}
+    {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+
+    {% if forloop.first %}
+      <ul class="small-block-grid-3">
+    {% elsif modulo == '1' %}
+      <ul class="small-block-grid-3" style="display: none;">
+    {% endif %}
+
+    <li class="media">
+      <a href="#" class="th left" data-link="{{ forloop.index | minus: 1 }}" data-modulo="{{ modulo }}">
+        <img class="lazy" data-original="{{ image.thumbnail }}" alt="{{ image.caption }}" width="100" height="100">
+      </a>
+
+      <div class="orbit-caption">
+        {{ image.caption }}
+      </div>
+    </li>
+
+    {% if modulo == '0' or forloop.last %}
+      </ul>
+    {% endif %}
+
+  {% endfor %}
+
+  <button id="show-more" class="expand">Show more</button>
+</div>

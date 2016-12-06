@@ -26,8 +26,42 @@
     }, 1000);
   }
 
+  function carousel() {
+    var $carousel = $('#carousel');
+
+    $carousel.slick({
+      lazyLoad: 'ondemand'
+    });
+
+    $('[data-link]').on('click', function (e) {
+      var slide = $(this).data('link');
+
+      $carousel.slick('slickGoTo', slide);
+    });
+  }
+
+  function gallery() {
+    var $gallery = $('#gallery'),
+      $rows = $gallery.find('ul:hidden');
+      $show = $gallery.find('#show-more');
+
+    $('img.lazy').lazyload();
+
+    $show.on('click', function (e) {
+      $($rows[0]).show();
+
+      $rows = $gallery.find('ul:hidden');
+
+      if ($rows.length === 0) {
+        $(this).remove();
+      }
+    });
+  }
+
   // Call other functions
   $(document).ready(function () {
     countdown();
+    carousel();
+    gallery();
   });
 })(jQuery);
