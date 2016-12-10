@@ -71,6 +71,13 @@ h6 {
   color: $emerald;
 }
 
+.slick-slide {
+  img {
+    margin: 0 auto;
+    max-height: 400px;
+  }
+}
+
 .media {
   &,
   .orbit-caption {
