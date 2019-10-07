@@ -2,7 +2,7 @@
 title: Bridget & Steve
 description: > # this means to ignore newlines until "baseurl:"
   Bridget and Steve got married!
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/bridgetandsteve/" # the subpath of your site, e.g. /blog/
 url: "http://bridgetandsteve.us" # the base hostname & protocol for your site
 
 safe: true
